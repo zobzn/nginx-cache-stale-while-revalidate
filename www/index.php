@@ -1,5 +1,5 @@
 <?php // sleep(2)?>
-<?php usleep(1 * 1000 * 1000) ?>
+<?php usleep(5 * 1000 * 1000) ?>
 <!DOCTYPE html>
 <meta charset="UTF-8" />
 <link rel="stylesheet" type="text/css" href="/webpack/test-1.css" />

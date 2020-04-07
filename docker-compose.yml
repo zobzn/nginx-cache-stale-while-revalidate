@@ -9,7 +9,7 @@ services:
       - ./conf/nginx.conf:/etc/nginx/nginx.conf
       - ./conf/mime.types:/etc/nginx/mime.types
       - ./www:/usr/share/nginx/html
-      # ./cache:/var/cache/nginx/est-cache-proxy
+      # ./cache:/var/cache/nginx/est-cache-php
     ports:
       - "3000:80"
       - "12321:12321"
@@ -21,3 +21,5 @@ services:
     image: php:7.2-fpm
     volumes:
       - ./www:/usr/share/nginx/html
+    # ports:
+    #   - "9000:9000"
